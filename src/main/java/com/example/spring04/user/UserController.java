@@ -1,0 +1,28 @@
+package com.example.spring04.user;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@Controller
+
+public class UserController {
+
+	@GetMapping("/user/info")
+	public String getUserInfo(Model model) {
+		User user = new User();
+		user.setId("minki");
+		user.setName("dd");
+		user.setEmail("windzxc@naver.com");
+		
+		model.addAttribute(user);
+		return "user";
+	}
+	
+	@GetMapping("/hello")
+	public String hello(Model model) {
+		model.addAttribute("hello","hello");
+		return "hello";
+	}
+}
