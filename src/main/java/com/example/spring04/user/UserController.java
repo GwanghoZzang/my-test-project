@@ -29,4 +29,5 @@ public class UserController {
 		model.addAttribute("hello","hello");
 		return "hello";
 	}
+	//아니 왜 로컬에 커밋만 했는데 깃허브에 올라기지???
 }

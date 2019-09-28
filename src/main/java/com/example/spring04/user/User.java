@@ -17,5 +17,4 @@ public class User {
 	 */
 
 		
-		//test 해봐야지
 }
