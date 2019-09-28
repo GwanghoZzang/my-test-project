@@ -15,5 +15,7 @@ public class User {
 	 * name) { this.name = name; } public String getEmail() { return email; } public
 	 * void setEmail(String email) { this.email = email; }
 	 */
+
 		
+		//test 해봐야지
 }
